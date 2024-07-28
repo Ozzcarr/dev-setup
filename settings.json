@@ -22,6 +22,9 @@
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "hidden",
 
+  // Git settings
+  "git.enableSmartCommit": true,
+
   // GitHub Copilot settings
   "github.copilot.editor.enableAutoCompletions": false,
   "github.copilot.editor.enableCodeActions": false,
@@ -63,6 +66,9 @@
   "vim.hlsearch": true,
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Switch between buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
     // Splits
     {"before": ["leader", "v"], "commands": [":vsplit"]},
     {"before": ["leader", "s"], "commands": [":split"]},
@@ -113,6 +119,11 @@
       "before": ["k", "k"],
       "after": ["<Esc>"]
     }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    {"before": ["<"], "commands": ["editor.action.outdentLines"]},
+    {"before": [">"], "commands": ["editor.action.indentLines"]}
   ],
   "vim.useCtrlKeys": false,
 
