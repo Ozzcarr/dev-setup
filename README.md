@@ -20,7 +20,19 @@ Then Oh My Zsh can be installed.
 ```shell
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 ```
-
+## Install miniconda
+To install miniconda and python, run the following command.
+```shell
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+```
+After installing miniconda, initialize it with the following command.
+```shell
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+```
 ## Connect to Github CLI
 First run the following command to download Github CLI.
 ```shell
