@@ -1,0 +1,99 @@
+[
+    // Navigation
+    {
+      "key": "ctrl+r",
+      "command": "workbench.action.gotoSymbol",
+      "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+    },
+    {
+      "key": "ctrl+j",
+      "command": "selectNextSuggestion"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "selectPrevSuggestion"
+    },
+    {
+      "key": "ctrl+j",
+      "command": "workbench.action.quickOpenNavigateNext",
+      "when": "inQuickOpen"
+    },
+    {
+      "key": "ctrl+k",
+      "command": "workbench.action.quickOpenNavigatePrevious",
+      "when": "inQuickOpen"
+    },
+    {
+      "key": "alt+j",
+      "command": "editor.action.moveLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "alt+k",
+      "command": "editor.action.moveLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "shift+alt+j",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "shift+alt+k",
+      "command": "editor.action.copyLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    // File tree
+    {
+      "command": "workbench.action.toggleSidebarVisibility",
+      "key": "ctrl+e"
+    },
+    {
+      "command": "workbench.files.action.focusFilesExplorer",
+      "key": "ctrl+e",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "n",
+      "command": "explorer.newFile",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "renameFile",
+      "key": "r",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "shift+n",
+      "command": "explorer.newFolder",
+      "when": "explorerViewletFocus"
+    },
+    {
+      "key": "shift+n",
+      "command": "workbench.action.newWindow",
+      "when": "!explorerViewletFocus"
+    },
+    {
+      "command": "deleteFile",
+      "key": "d",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    // Python
+    {
+      "key": "ctrl+alt+n",
+      "command": "python.execInTerminal-icon"
+    },
+    // Extensions
+    {
+      "key": "shift+alt+q",
+      "command": "workbench.panel.chat.view.copilot.focus"
+    },
+    {
+      "key": "tab",
+      "command": "-acceptSelectedSuggestion"
+    },
+    {
+      "key": "tab",
+      "command": "tabout"
+    }
+  ]
