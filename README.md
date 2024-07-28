@@ -53,5 +53,8 @@ When VS Code has been downloaded, install the extensions by running the followin
 ```shell
 bash <(wget -qO- https://raw.githubusercontent.com/Ozzcarr/dev-setup/main/install_vscode_extensions.sh)
 ```
+## Download font
+Download the [font](https://raw.githubusercontent.com/Ozzcarr/dev-setup/main/MonaspaceArgonVarVF%5Bwght%2Cwdth%2Cslnt%5D.ttf) that will be used.
+When the font is downloaded, copy it and put it in "C:\Windows\Fonts".
 ## Setup settings and keybinds
 Copy the [settings](https://github.com/Ozzcarr/dev-setup/blob/main/settings.json) and [keybinds](https://github.com/Ozzcarr/dev-setup/blob/main/keybindings.json) into the *settings.json* and *keybindings.json* files in VS Code.
