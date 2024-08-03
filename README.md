@@ -16,7 +16,7 @@ sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```
 ## Downloading necessary packages
 ```shell
-sudo apt install git curl build-essential -y
+sudo apt install git curl npm build-essential -y
 ```
 ## Changing shell
 To change shell to Oh My Zsh, first download zsh with the following command.
