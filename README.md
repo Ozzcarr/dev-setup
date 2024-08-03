@@ -14,7 +14,7 @@ After creating an account, run the following command to update all packages.
 sudo apt update -y && sudo apt full-upgrade -y &&
 sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```
-## Downloading neccesary packages
+## Downloading necessary packages
 ```shell
 sudo apt install git curl build-essential -y
 ```
@@ -27,6 +27,7 @@ Then Oh My Zsh can be installed.
 ```shell
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
 ```
+Reboot the computer after the shell has been installed.
 ## Connect to Github CLI
 First run the following command to download Github CLI.
 ```shell
@@ -56,7 +57,17 @@ After installing miniconda, initialize it with the following command.
 # Setting up code editor
 Either Lazyvim or VS Code can be used as the code editor.
 ## Setup Lazyvim
-To setup lazyvim, you first have to install rust and cargo, bob and the lastly neovim. Only after that can lazyvim can be installed.
+To setup lazyvim, you first have to install a nerd font, rust and cargo, bob and the lastly neovim. Only after that can lazyvim can be installed.
+### Install nerd font
+Install the nerd font by running the following command. Change the URL and zip file names to the font you'd like to use.
+```shell
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
+```
+After installing, change the font in the terminal to the font you installed.
 ### Install Rust
 Install rust and cargo by running the following command.
 ```shell
