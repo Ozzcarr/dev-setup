@@ -76,7 +76,43 @@ You can now use bob to install neovim.
 ```shell
 bob install stable
 ```
-Continue here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+After stable has been installed, it needs to be set to the current used version.
+```shell
+bob use stable
+```
+You also need to add a binary to PATH.
+
+Run the following command to enter the file.
+```shell
+vi ~/.zshrc
+```
+And add this line in the beginning of the file. Make sure to change <username> to your username.
+```shell
+export PATH=$PATH:/home/<username>/.local/share/bob/nvim-bin
+```
+Finally you need to source the file.
+```shell
+source ~/.zshrc
+```
+### Install lazyvim
+If neccesary, backup your files first.
+```shell
+# required
+mv ~/.config/nvim{,.bak}
+
+# optional but recommended
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
+Then clone the starter.
+```shell
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+And lastly remove the `.git` folder so you can add it to your own repo later.
+```shell
+rm -rf ~/.config/nvim/.git
+```
 ## Setup VS Code
 After linux has been set up, VS Code can be installed.
 ### Download VS Code
