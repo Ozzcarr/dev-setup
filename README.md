@@ -18,6 +18,9 @@ sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```shell
 sudo apt install git curl npm build-essential -y
 ```
+```shell
+sudo apt-get install luarocks -y
+```
 ## Changing shell
 To change shell to Oh My Zsh, first download zsh with the following command.
 ```shell
