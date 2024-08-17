@@ -16,7 +16,7 @@ sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```
 ## Downloading necessary packages
 ```shell
-sudo apt install git curl npm build-essential -y
+sudo apt install git curl npm build-essential zip unzip -y
 ```
 ```shell
 sudo apt-get install luarocks -y
