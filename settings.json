@@ -108,7 +108,13 @@
       "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
-      "keys": "g.u",
+      "keys": "g.r",
+      "name": "Discard Changes",
+      "type": "command",
+      "command": "git.clean"
+    },
+    {
+      "keys": "g.R",
       "name": "Discard All Changes",
       "type": "command",
       "command": "git.cleanAll"
