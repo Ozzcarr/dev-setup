@@ -78,16 +78,16 @@
   "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/init.lua",
   "vscode-neovim.compositeKeys": {
     "jj": {
-        "command": "vscode-neovim.escape",
+      "command": "vscode-neovim.escape",
     },
     "jk": {
-        "command": "vscode-neovim.escape",
+      "command": "vscode-neovim.escape",
     },
     "kj": {
-        "command": "vscode-neovim.escape",
+      "command": "vscode-neovim.escape",
     },
     "kk": {
-        "command": "vscode-neovim.escape",
+      "command": "vscode-neovim.escape",
     },
   },
 
@@ -112,6 +112,12 @@
       "command": "git.cleanAll"
     },
     {
+      "keys": "g.D",
+      "name": "Diff file",
+      "type": "command",
+      "command": "git.openChange"
+    },
+    {
       "keys": "+",
       "name": "Increase number",
       "type": "command",
@@ -122,8 +128,13 @@
       "name": "Decrease number",
       "type": "command",
       "command": "editor.emmet.action.decrementNumberByOne"
+    },
+    {
+      "keys": "r",
+      "name": "Reload Window",
+      "type": "command",
+      "command": "workbench.action.reloadWindow"
     }
-
   ],
   "whichkey.delay": 200
 }
