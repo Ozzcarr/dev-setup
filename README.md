@@ -18,15 +18,6 @@ sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ```shell
 sudo apt install git curl npm build-essential zip unzip -y
 ```
-```shell
-sudo apt-get install luarocks -y
-```
-```shell
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-tar xf lazygit.tar.gz lazygit
-sudo install lazygit /usr/local/bin
-```
 ## Changing shell
 To change shell to Oh My Zsh, first download zsh with the following command.
 ```shell
@@ -64,82 +55,33 @@ After installing miniconda, initialize it with the following command.
 ```
 
 # Setting up code editor
-Either Lazyvim or VS Code can be used as the code editor.
-## Setup Lazyvim
-To setup lazyvim, you first have to install a nerd font, rust and cargo, bob and the lastly neovim. Only after that can lazyvim can be installed.
-### Install nerd font
-Install the nerd font by running the following command. Change the URL and zip file names to the font you'd like to use.
+VS Code is used as the code editor with Neovim in the background.
+## Setup neovim
+To setup neovim to be used in VS Code, brew has to be installed.
+### Install brew
+Run the following command to install homebrew.
 ```shell
-wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip \
-&& cd ~/.local/share/fonts \
-&& unzip JetBrainsMono.zip \
-&& rm JetBrainsMono.zip \
-&& fc-cache -fv
-```
-After installing, change the font in the terminal to the font you installed.
-### Install Rust
-Install rust and cargo by running the following command.
-```shell
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-After rust and cargo have been installed you need to source them. This can be done with the following command.
-```shell
-. "$HOME/.cargo/env"
-```
-### Install bob
-Bob is the neovim version manager. To install bob, run the following command.
-```shell
-cargo install --git https://github.com/MordechaiHadad/bob.git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 ### Install neovim
-You can now use bob to install neovim.
+After brew has been installed, install neovim by running the following command.
 ```shell
-bob install stable
+brew install neovim
 ```
-After stable has been installed, it needs to be set to the current used version.
+### Setup neovim config
+Run the following command to enter the config file.
 ```shell
-bob use stable
+nvim ~/.config/nvim/init.lua
 ```
-You also need to add a binary to PATH.
+When in the file, paste the file contents from the init.lua file in this repository.
 
-Run the following command to enter the file.
-```shell
-vi ~/.zshrc
-```
-And add this line in the beginning of the file. Make sure to change <username> to your username.
-```shell
-export PATH=$PATH:/home/<username>/.local/share/bob/nvim-bin
-```
-Finally you need to source the file.
-```shell
-source ~/.zshrc
-```
-### Install lazyvim
-If neccesary, backup your files first.
-```shell
-# required
-mv ~/.config/nvim{,.bak}
-
-# optional but recommended
-mv ~/.local/share/nvim{,.bak}
-mv ~/.local/state/nvim{,.bak}
-mv ~/.cache/nvim{,.bak}
-```
-Then clone the starter.
-```shell
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-```
-And lastly remove the `.git` folder so you can add it to your own repo later.
-```shell
-rm -rf ~/.config/nvim/.git
-```
 ## Setup VS Code
 After linux has been set up, VS Code can be installed.
 ### Download VS Code
 Install VS Code from their [website](https://vscode.download.prss.microsoft.com/dbazure/download/stable/f1e16e1e6214d7c44d078b1f0607b2388f29d729/VSCodeUserSetup-x64-1.91.1.exe).
 When prompted to **Select Additional Tasks** during installation, be sure to check the **Add to PATH** option so you can easily open a folder in WSL using the code command.
 ### Install extensions
-When VS Code has been downloaded, install the extensions by running the following command.
+When VS Code has been downloaded, install the extensions by running the following command in WSL. The VS code extensions can be installed as you wish.
 ```shell
 bash <(wget -qO- https://raw.githubusercontent.com/Ozzcarr/dev-setup/main/install_vscode_extensions.sh)
 ```
