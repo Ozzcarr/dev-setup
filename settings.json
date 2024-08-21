@@ -110,7 +110,20 @@
       "name": "Discard All Changes",
       "type": "command",
       "command": "git.cleanAll"
+    },
+    {
+      "keys": "+",
+      "name": "Increase number",
+      "type": "command",
+      "command": "editor.emmet.action.incrementNumberByOne"
+    },
+    {
+      "keys": "-",
+      "name": "Decrease number",
+      "type": "command",
+      "command": "editor.emmet.action.decrementNumberByOne"
     }
+
   ],
   "whichkey.delay": 200
 }
