@@ -109,5 +109,16 @@
     "key": "tab",
     "command": "tabout",
     "when": "!inQuickOpen"
+  },
+  // Git
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "git.stageSelectedRanges",
+    "when": "editorTextFocus && isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "git.revertSelectedRanges",
+    "when": "editorTextFocus && isInDiffEditor"
   }
 ]
