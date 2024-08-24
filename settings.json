@@ -142,7 +142,14 @@
       "name": "Reload Window",
       "type": "command",
       "command": "workbench.action.reloadWindow"
+    },
+    {
+      "keys": "f.d",
+      "name": "Delete File",
+      "type": "command",
+      "command": "deleteFile"
     }
   ],
-  "whichkey.delay": 200
+  "whichkey.delay": 200,
+  "workbench.startupEditor": "none"
 }
