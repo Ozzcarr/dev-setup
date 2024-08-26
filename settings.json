@@ -151,5 +151,5 @@
       "command": "deleteFile"
     }
   ],
-  "whichkey.delay": 200,
+  "whichkey.delay": 200
 }
