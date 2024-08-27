@@ -24,7 +24,7 @@ sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
 ## Downloading necessary packages
 
 ```shell
-sudo apt install git curl npm build-essential zip unzip -y
+sudo apt install git curl npm build-essential clang-format zip unzip -y
 ```
 
 ## Changing shell

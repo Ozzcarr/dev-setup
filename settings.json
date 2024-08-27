@@ -47,6 +47,9 @@
   "[azure-pipelines]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": "always"

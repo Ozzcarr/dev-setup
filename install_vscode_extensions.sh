@@ -25,7 +25,8 @@ extensions=(
     ms-vscode.cpptools-themes
     ms-vscode.makefile-tools
     shd101wyy.markdown-preview-enhanced
-    twxs.cmaked
+    twxs.cmake
+    xaver.clang-format
 )
 
 # Loop through the list and install each extension
