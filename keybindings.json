@@ -99,17 +99,6 @@
     "key": "ctrl+alt+n",
     "command": "python.execInTerminal-icon"
   },
-  // Extensions
-  {
-    "key": "tab",
-    "command": "-acceptSelectedSuggestion",
-    "when": "!inQuickOpen"
-  },
-  {
-    "key": "tab",
-    "command": "tabout",
-    "when": "!inQuickOpen"
-  },
   // Git
   {
     "key": "ctrl+k ctrl+s",
@@ -121,7 +110,7 @@
     "command": "git.revertSelectedRanges",
     "when": "editorTextFocus && isInDiffEditor"
   },
-  // Other
+  // Ctrl keys
   {
     "key": "ctrl+c",
     "command": "editor.action.clipboardCopyAction",
@@ -141,5 +130,16 @@
     "key": "ctrl+a",
     "command": "editor.action.selectAll",
     "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  // Other
+  {
+    "key": "ctrl+alt+r",
+    "command": "workbench.action.reloadWindow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "space",
+    "command": "whichkey.show",
+    "when": "!inputFocus"
   }
 ]

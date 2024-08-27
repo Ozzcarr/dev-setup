@@ -2,7 +2,6 @@
 
 # List of VSCode extensions to install
 extensions=(
-    albert.tabout
     christian-kohler.path-intellisense
     donjayamanne.python-environment-manager
     esbenp.prettier-vscode
@@ -20,7 +19,13 @@ extensions=(
     ms-toolsai.jupyter-renderers
     ms-toolsai.vscode-jupyter-cell-tags
     ms-toolsai.vscode-jupyter-slideshow
+    ms-vscode.cmake-tools
+    ms-vscode.cpptools
+    ms-vscode.cpptools-extension-pack
+    ms-vscode.cpptools-themes
+    ms-vscode.makefile-tools
     shd101wyy.markdown-preview-enhanced
+    twxs.cmaked
 )
 
 # Loop through the list and install each extension
