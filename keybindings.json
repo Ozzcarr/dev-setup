@@ -110,6 +110,16 @@
     "command": "git.revertSelectedRanges",
     "when": "editorTextFocus && isInDiffEditor"
   },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "editorTextFocus && isInDiffEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "editorTextFocus && isInDiffEditor"
+  },
   // Ctrl keys
   {
     "key": "ctrl+c",
