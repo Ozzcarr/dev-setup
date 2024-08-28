@@ -133,6 +133,12 @@
       "command": "git.openChange"
     },
     {
+      "keys": "g.P",
+      "name": "Git Pull",
+      "type": "command",
+      "command": "git.pull"
+    },
+    {
       "keys": "g.S",
       "name": "Git Status",
       "type": "command",
