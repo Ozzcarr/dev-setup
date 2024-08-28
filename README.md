@@ -121,10 +121,14 @@ brew install neovim
 
 ### Setup neovim config
 
-Run the following command to enter the config file.
+Run the following commands to create and enter the config file.
 
 ```shell
-nvim ~/.config/nvim/init.lua
+cd ~/.config
+mkdir nvim
+cd nvim
+touch init.lua
+nvim init.lua
 ```
 
 When in the file, paste the file contents from the init.lua file in this repository.
