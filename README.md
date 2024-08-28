@@ -43,6 +43,22 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 Reboot the computer after the shell has been installed.
 
+## Setup git
+
+Git needs to be setup with your name, email and the default name of newly initialized branches.
+
+```shell
+git config --global user.name "Your name"
+```
+
+```shell
+git config --global user.email "Your email"
+```
+
+```shell
+git config --global init.defaultBranch main
+```
+
 ## Connect to Github CLI
 
 First run the following command to download Github CLI.
