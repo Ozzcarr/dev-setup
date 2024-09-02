@@ -59,6 +59,9 @@
     }
   },
 
+  // C / C++ specific settings
+  "clang-format.style": "{ BasedOnStyle: Google, IndentWidth: 4}",
+
   // Python-specific settings
   "isort.args": ["--profile", "black"],
   "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
