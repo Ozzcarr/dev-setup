@@ -19,6 +19,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "One Dark Pro Mix",
+  "workbench.activityBar.location": "hidden",
+  "workbench.layoutControl.enabled": false,
 
   // Git settings
   "git.enableSmartCommit": true,
@@ -66,6 +68,9 @@
   "isort.args": ["--profile", "black"],
   "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
 
+  // LaTeX settings
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+
   // Files settings
   "files.exclude": {
     "**/__pycache__": true,
@@ -76,8 +81,6 @@
   "editor.lineNumbers": "relative",
   "markdown-preview-enhanced.previewTheme": "atom-material.css",
   "markdown-preview-enhanced.enablePreviewZenMode": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "compact",
   "window.commandCenter": false,
 
