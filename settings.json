@@ -83,6 +83,7 @@
   "markdown-preview-enhanced.enablePreviewZenMode": false,
   "window.menuBarVisibility": "compact",
   "window.commandCenter": false,
+  "makefile.configureOnOpen": false,
 
   // Neovim
   "extensions.experimental.affinity": {
@@ -105,6 +106,7 @@
       "command": "vscode-neovim.escape"
     }
   },
+  "vscode-neovim.compositeTimeout": 100,
 
   // Which key
   "whichkey.bindingOverrides": [
@@ -152,7 +154,7 @@
     },
     {
       "keys": "g.s",
-      "name": "+Stage",
+      "name": "+Stage/Stash",
       "type": "bindings",
       "bindings": [
         {
@@ -166,6 +168,18 @@
           "name": "Stage All",
           "type": "command",
           "command": "git.stageAll"
+        },
+        {
+          "key": "s",
+          "name": "Git Stash",
+          "type": "command",
+          "command": "git.stash"
+        },
+        {
+          "key": "p",
+          "name": "Apply Stash",
+          "type": "command",
+          "command": "git.stashApply"
         }
       ]
     },
